@@ -2,7 +2,11 @@
 
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<<<<<<< HEAD
         >
+=======
+         >
+>>>>>>> 6a8dc6507e9bb083f598b1193e996d76f6543891
 
     <modelVersion>4.0.0</modelVersion>
 

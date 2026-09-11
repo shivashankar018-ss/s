@@ -1,24 +1,25 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Reservation Confirmation</title>
-</head>
+    <!DOCTYPE html>
+    <html>
 
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Reservation Confirmation</title>
+    </head>
 
-    <h1>Thank You!</h1>
+    <body>
 
-    <h2>Your room has been reserved successfully.</h2>
+        <h1>Thank You!</h1>
+        <h1>hello </h1>
+        <h2>Your room has been reserved successfully.</h2>
 
-    <p>Thank you for using our Hotel Reservation System.</p>
+        <p>Thank you for using our Hotel Reservation System.</p>
 
-    <br>
+        <br>
 
-    <a href="index.jsp">Make Another Reservation</a>
+        <a href="index.jsp">Make Another Reservation</a>
 
-</body>
-</html>
+    </body>
+
+    </html>
