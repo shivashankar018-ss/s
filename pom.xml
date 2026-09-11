@@ -1,43 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
-         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+        >
+
     <modelVersion>4.0.0</modelVersion>
-    <groupid>CSMB</groupid>
-    <ArtifactId>HotelReservationSystem</ArtifactId>
-    <packaging>jar</packaging>
+
+    <groupId>CSMB</groupId>
+    <artifactId>HotelReservationSystem</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>war</packaging>
+
     <name>Hotel Reservation System</name>
-    <url>http://localhost:8345/HRS</url>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
     <dependencies>
-        <!-- Servlet API -->
+
+        <!-- Servlet API for Tomcat 10 -->
         <dependency>
-            <groupId>javax.servlet</groupId>
-            <artificatId>servlet-api</artificatId>
-            <version>2.5</version>
+            <groupId>jakarta.servlet</groupId>
+            <artifactId>jakarta.servlet-api</artifactId>
+            <version>6.0.0</version>
+            <scope>provided</scope>
         </dependency>
+
         <!-- MySQL Database -->
         <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector</artifactId>
-            <version>5.1</version>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <version>8.4.0</version>
         </dependency>
+
         <!-- JUnit -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
+            <version>4.13.2</version>
             <scope>test</scope>
         </dependency>
+
     </dependencies>
+
     <build>
         <finalName>HRS</finalName>
+
         <plugins>
-            <!-- Tomcat Plugin -->
+
+            <!-- Maven WAR Plugin -->
             <plugin>
-                <artifactId>tomcat7-maven-plugin</artifactId>
-                <version>2.2</version>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.4.0</version>
             </plugin>
+
         </plugins>
     </build>
+
 </project>
